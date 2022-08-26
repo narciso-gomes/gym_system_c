@@ -33,5 +33,23 @@ namespace Gym_system
         {
 
         }
+
+        private void logonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Login f_Login = new F_Login(this);
+            f_Login.ShowDialog();
+        }
+
+        private void logoffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lb_acesso.Text = "0";
+            lb_nomeUsuario.Text = "---";
+
+            // TODO: adicionar imagem do Pincture box => falta importar as imagens nos Resources do projeto
+            // form1.pb_ledLogado.Image = Properties.Resources.led_vermelho
+
+            Globais.nivel = 0;
+            Globais.logado = false;
+        }
     }
 }
