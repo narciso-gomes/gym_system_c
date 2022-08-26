@@ -31,11 +31,37 @@ namespace Gym_system
                     cmd.CommandText = "SELECT * FROM tb_usuarios";
                     da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
                     da.Fill(dt);
+                    ConexaoBanco().Close();
                     return dt;
                 }
 
             }catch(Exception e)
             {
+                ConexaoBanco().Close();
+                throw (e);
+            }
+        }
+
+        public static DataTable consulta(string sql)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (var cmd = ConexaoBanco().CreateCommand())
+                {
+                    cmd.CommandText = sql;
+                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+                    da.Fill(dt);
+                    ConexaoBanco().Close();
+                    return dt;
+                }
+
+            }
+            catch (Exception e)
+            {
+                ConexaoBanco().Close();
                 throw (e);
             }
         }
