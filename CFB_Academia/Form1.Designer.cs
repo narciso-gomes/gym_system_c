@@ -1,4 +1,4 @@
-﻿namespace CFB_Academia
+﻿namespace Gym_system
 {
     partial class Form1
     {

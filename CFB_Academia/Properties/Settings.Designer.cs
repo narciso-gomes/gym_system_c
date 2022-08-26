@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CFB_Academia.Properties
+namespace Gym_system.Properties
 {
 
 

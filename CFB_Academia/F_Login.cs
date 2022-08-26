@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CFB_Academia
+namespace Gym_system
 {
     public partial class F_Login : Form
     {

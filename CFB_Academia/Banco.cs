@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SQLite;
 
-namespace CFB_Academia
+namespace Gym_system
 {
     internal class Banco
     {
