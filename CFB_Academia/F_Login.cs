@@ -49,6 +49,7 @@ namespace Gym_system
 
             string sql = "SELECT * FROM tb_usuarios WHERE T_USERNAME = '"+username+"' AND T_SENHAUSUARIO='"+senha+"'";
             dt = Banco.consulta(sql);
+            Console.Write(dt);
             if(dt.Rows.Count == 1)
             {
                 form1.lb_acesso.Text = dt.Rows[0].ItemArray[5].ToString();

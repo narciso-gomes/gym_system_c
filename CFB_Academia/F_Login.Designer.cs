@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.tb_username = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.tb_senha = new System.Windows.Forms.Label();
+            this.tb_senha = new System.Windows.Forms.TextBox();
+            this.senha = new System.Windows.Forms.Label();
             this.btn_logar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -52,23 +52,23 @@
             this.tb_username.Size = new System.Drawing.Size(213, 20);
             this.tb_username.TabIndex = 1;
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(33, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(213, 20);
-            this.textBox2.TabIndex = 3;
-            // 
             // tb_senha
             // 
-            this.tb_senha.AutoSize = true;
-            this.tb_senha.Location = new System.Drawing.Point(30, 74);
+            this.tb_senha.Location = new System.Drawing.Point(33, 90);
             this.tb_senha.Name = "tb_senha";
-            this.tb_senha.Size = new System.Drawing.Size(38, 13);
-            this.tb_senha.TabIndex = 2;
-            this.tb_senha.Text = "Senha";
-            this.tb_senha.Click += new System.EventHandler(this.label2_Click);
+            this.tb_senha.PasswordChar = '*';
+            this.tb_senha.Size = new System.Drawing.Size(213, 20);
+            this.tb_senha.TabIndex = 3;
+            // 
+            // senha
+            // 
+            this.senha.AutoSize = true;
+            this.senha.Location = new System.Drawing.Point(30, 74);
+            this.senha.Name = "senha";
+            this.senha.Size = new System.Drawing.Size(38, 13);
+            this.senha.TabIndex = 2;
+            this.senha.Text = "Senha";
+            this.senha.Click += new System.EventHandler(this.label2_Click);
             // 
             // btn_logar
             // 
@@ -97,8 +97,8 @@
             this.ClientSize = new System.Drawing.Size(284, 211);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_logar);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.tb_senha);
+            this.Controls.Add(this.senha);
             this.Controls.Add(this.tb_username);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -117,8 +117,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_username;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label tb_senha;
+        private System.Windows.Forms.TextBox tb_senha;
+        private System.Windows.Forms.Label senha;
         private System.Windows.Forms.Button btn_logar;
         private System.Windows.Forms.Button btn_cancelar;
     }

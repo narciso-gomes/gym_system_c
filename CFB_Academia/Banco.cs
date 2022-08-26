@@ -14,7 +14,7 @@ namespace Gym_system
 
         private static SQLiteConnection ConexaoBanco()
         {
-            conexao = new SQLiteConnection("Data Source=D:\\projetos\\estudos\\c#\\CFB_Academia\\CFB_Academia\\database");
+            conexao = new SQLiteConnection("Data Source=D:\\projetos\\estudos\\c#\\gym_system_c\\CFB_Academia\\database\\db_academia.db");
             conexao.Open();
             return conexao;
         }
